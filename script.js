@@ -1,5 +1,7 @@
 const textArea = document.querySelector(".text-area");
 const mensaje = document.querySelector(".mensaje");
+const campoSalida = document.querySelector(".campo-salida");
+const btnCopiar = document.querySelector(".copiar");
 
 //La letra "e" es convertida para "enter"
 //La letra "i" es convertida para "imes"
@@ -10,8 +12,11 @@ const mensaje = document.querySelector(".mensaje");
 function btnEncriptar(){
     const textoEncriptado = encriptar(textArea.value)
     mensaje.value = textoEncriptado
+    console.log(textoEncriptado);
     textArea.value = "";
-    mensaje.style.backgroundImage = "none"
+    campoSalida.style.display = "none"
+    btnCopiar.style.display = "block"
+    mensaje.style.display = "block"
 }
 
 function encriptar(stringEncriptada) {
