@@ -12,7 +12,6 @@ const btnCopiar = document.querySelector(".copiar");
 function btnEncriptar(){
     const textoEncriptado = encriptar(textArea.value)
     mensaje.value = textoEncriptado
-    console.log(textoEncriptado);
     textArea.value = "";
     campoSalida.style.display = "none"
     btnCopiar.style.display = "block"

@@ -156,18 +156,6 @@ button {
     display: none;
     color: #0A3871;
     border: 1px solid #0A3871;
-    position:absolute;
-    bottom: 166px;
-    right: 350px;
-}
-
-.copiar{
-    display: none;
-    color: #0A3871;
-    border: 1px solid #0A3871;
-    position:absolute;
-    bottom: 166px;
-    right: 350px;
 }
 
 .informacion{
