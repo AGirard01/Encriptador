@@ -175,12 +175,22 @@ button {
     margin: 0;
 }
 
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 478px) {
     /*HEADER*/
     .logo {
         display: flex;
         justify-content: center;
-        width: 240px;
+        width: 100px;
         margin-top: 12px;
     }
     .logo img {
@@ -194,7 +204,7 @@ button {
         gap: 32px;
     }
 
-    .mensaje {
+    .text-area {
         width: 220px;
         height: 340px;
         align-self: center;
@@ -207,7 +217,7 @@ button {
         font-size: 12px;
     }
 
-    .advertencia {
+    .informacion {
         font-size: 8px;
         text-align: center;
     }
@@ -223,6 +233,11 @@ button {
         margin-right: 0px;
         margin-bottom: 8px;
     }
+    
+    .copiar {
+        bottom: -100px;
+        right: 63px;
+    }
 
     /*CONTENEDOR SALIDA*/
 
@@ -231,6 +246,13 @@ button {
         height: 360px;
         padding: 20px;
         align-self: center;
+    }
+    
+    .mensaje {
+        width: 220px;
+        height: 300px;
+        font-size: 12px;
+        top: 650px;
     }
 
     .ilustracion {
@@ -256,3 +278,98 @@ button {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 478px) and (max-width: 699px) {
+    /*CONTENEDOR ENTRADA*/
+    main {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .text-area {
+        width: 400px;
+        height: 400px;
+        align-self: center;
+        padding: 20px;
+        font-size: 16px;
+        margin-top: 0;
+    }
+
+    ::placeholder {
+        font-size: 16px;
+    }
+
+    .informacion {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    /*BOTONES*/
+    button {
+        width: 320px;
+        height: 60px;
+        font-size: 20px;
+    }
+    
+    .botones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-encriptar {
+        margin-right: 0px;
+        margin-bottom: 16px;
+    }
+    
+    .copiar {
+        bottom: -234px;
+        right: 100px;
+    }
+
+    /*CONTENEDOR SALIDA*/
+
+    .contenedor-salida {
+        width: 400px;
+        height: 400px;
+        padding: 20px;
+        align-self: center;
+    }
+    
+    .mensaje {
+        width: 400px;
+        height: 300px;
+        font-size: 16px;
+        top: 760px;
+    }
+
+    .ilustracion {
+        width: 190px;
+        height: 190px;
+    }
+    
+    .campo-salida {
+        gap: 40px;
+    }
+    
+    .campo-salida p {
+        font-size: 12px;
+        margin: 0;
+    }
+    
+    /*FOOTER*/
+    
+    .footer {
+        font-size: 10px;
+        padding: 20px 0;
+    }
+}
