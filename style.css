@@ -66,7 +66,7 @@ main{
 
 .contenedor-salida {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     flex-direction: column;
     width: 240px;
     height: 540px;
@@ -150,6 +150,15 @@ button {
     border: 1px solid #0A3871;
     color: white;
     margin-right: 20px;
+}
+
+.copiar{
+    display: none;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    position:absolute;
+    bottom: 166px;
+    right: 350px;
 }
 
 .copiar{
